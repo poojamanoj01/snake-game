@@ -1,26 +1,54 @@
+
+
+
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Snake Game</title>
-    <link rel="stylesheet" href="./style.css">
+    <title>Login page</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <link rel="stylesheet" href="./styles.css">
+
 </head>
+
 <body>
-    <div class="container noselect">
-        <div class="wrapper">
-            <button id="replay">REPLAY</button>
-            <div id="canvas"></div>
-            <div id="ui">
-                <h2>score</h2>
-                <div id="score">00</div>
-            </div>
-        </div>
-        <div id="author">
-            <h1>SNAKE</h1>
-            <span>by Anchor</span>
-        </div>
+    <div class="container">
+        <form class="w-50 mx-auto py-5 shadow p-4">
+            <h3>Login </h3>
+            <hr>
+            <div class="mb-3">
+                <label for="usernameInput" class="form-label">Username</label>
+
+                <input type="text" class="form-control"  aria-label="Username" aria-describedby="basic-addon1" id="usernameInput">
+
+                <div class="mb-3">
+                    <label for="pswdInput" class="form-label">Password</label>
+                    <input type="password" class="form-control" id="pswdInput">
+                </div>
+
+                <div class="mb-3 d-flex justify-content-between">
+
+                    <input onclick="login()" type="button" class="btn btn-primary" value="Login">
+                    
+                    <p class="form-label mt-2">Create New Account?</p>
+                  </div>
+
+        </form>
     </div>
+
+
+
+
 </body>
-<script src="./game.js"></script>
+<!-- external js -->
+ <script src="./main.js">
+
+ </script>
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
+    crossorigin="anonymous"></script>
+
 </html>
